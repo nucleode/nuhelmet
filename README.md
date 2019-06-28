@@ -10,5 +10,6 @@
 </div>
 
 Content Security Policy (CSP) plugin with security best practices for OWASP.
+
 Be like Fort Knox!
 
