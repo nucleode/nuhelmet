@@ -13,3 +13,15 @@ Content Security Policy (CSP) plugin with security best practices for OWASP.
 
 Be like Fort Knox!
 
+
+## Install
+`npm install nuhelmet`
+
+## Usage
+```typescript
+import nuhelmet from 'nuhelmet'
+
+server.register(nuhelmet, {
+    domain: '*.nucleode.com',
+  })
+```
