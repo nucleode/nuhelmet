@@ -34,6 +34,14 @@
     "tslint-config-prettier": "~1.18.0",
     "typescript": "~3.5.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucleode/nuhelmet.git"
+  },
+  "keywords": ["fastify", "fastify-plugin", "fastify-helmet", "CSP", "OWASP"],
+  "bugs": {
+    "url": "https://github.com/nucleode/nuhelmet/issues"
+  },
   "files": [
     "/lib",
     "/typings"
