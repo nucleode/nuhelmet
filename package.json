@@ -1,6 +1,6 @@
 {
   "name": "nuhelmet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices design for OWASP",
   "main": "./lib",
   "types": "./lib",
@@ -38,7 +38,13 @@
     "type": "git",
     "url": "git+https://github.com/nucleode/nuhelmet.git"
   },
-  "keywords": ["fastify", "fastify-plugin", "fastify-helmet", "CSP", "OWASP"],
+  "keywords": [
+    "fastify",
+    "fastify-plugin",
+    "fastify-helmet",
+    "CSP",
+    "OWASP"
+  ],
   "bugs": {
     "url": "https://github.com/nucleode/nuhelmet/issues"
   },
