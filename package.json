@@ -1,7 +1,7 @@
 {
   "name": "nuhelmet",
   "version": "0.0.1",
-  "description": "Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices for OWASP",
+  "description": "Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices design for OWASP",
   "main": "./lib",
   "types": "./lib",
   "author": "Matteo Vivona <matteo@nucleode.com>, Riccado Gulin <riccardo@nucleode.com>",
@@ -40,7 +40,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test && npm run build"
+      "pre-commit": "npm run build"
     }
   },
   "dependencies": {
