@@ -4,6 +4,7 @@ import helmet from 'fastify-helmet'
 export default fastifyPlugin(function(fastify, opts, next) {
   const { domain } = opts
   fastify.register(helmet, {
+    hidePoweredBy: true,
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'", domain],
