@@ -9,10 +9,8 @@
 
 </div>
 
-Content Security Policy (CSP) plugin with security best practices for OWASP.
-
+Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices design for OWASP.
 Be like Fort Knox!
-
 
 ## Install
 `npm install nuhelmet`
@@ -22,6 +20,11 @@ Be like Fort Knox!
 import nuhelmet from 'nuhelmet'
 
 server.register(nuhelmet, {
-    domain: '*.nucleode.com',
+    domains: ['nucleode.com','fastify.io'],
   })
 ```
+
+### Dependencies
+
+* [fastify-plugin](https://github.com/fastify/fastify-plugin)
+* [fastify-helmet](https://github.com/fastify/fastify-helmet)
