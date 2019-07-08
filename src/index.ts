@@ -8,7 +8,9 @@ export default fastifyPlugin(function(fastify, opts, next) {
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'", domain],
-        styleSrc: ["'self'", domain, "'unsafe-inline'", 'fonts.googleapis.com'],
+        styleSrc: ["'self'", domain, 'fonts.googleapis.com'].concat(
+          process.env.NODE_ENV === 'development' ? ["'unsafe-inline'"] : [],
+        ),
         fontSrc: ["'self' data:", 'fonts.googleapis.com', 'fonts.gstatic.com'],
         scriptSrc: ["'self'", domain].concat(
           process.env.NODE_ENV === 'development' ? ["'unsafe-eval'", "'unsafe-inline'"] : [],
