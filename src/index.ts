@@ -7,12 +7,12 @@ export default fastifyPlugin(function(fastify, opts, next) {
     hidePoweredBy: true,
     contentSecurityPolicy: {
       directives: {
-        defaultSrc: ["'self'", domains],
-        styleSrc: ["'self'", domains, 'fonts.googleapis.com'].concat(
+        defaultSrc: ["'self'", ...domains],
+        styleSrc: ["'self'", ...domains, 'fonts.googleapis.com'].concat(
           process.env.NODE_ENV === 'development' ? ["'unsafe-inline'"] : [],
         ),
         fontSrc: ["'self' data:", 'fonts.googleapis.com', 'fonts.gstatic.com'],
-        scriptSrc: ["'self'", domains].concat(
+        scriptSrc: ["'self'", ...domains].concat(
           process.env.NODE_ENV === 'development' ? ["'unsafe-eval'", "'unsafe-inline'"] : [],
         ),
         objectSrc: ["'none'"],
