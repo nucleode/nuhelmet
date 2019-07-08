@@ -1,10 +1,13 @@
 import fastifyPlugin from 'fastify-plugin'
 import helmet from 'fastify-helmet'
 
-export default fastifyPlugin(function(fastify, opts, next) {
-  const { domains } = opts
+export = fastifyPlugin(function(fastify, opts, next) {
+  const { domains = [], noCache = true, noSniff = true } = opts
+
   fastify.register(helmet, {
-    hidePoweredBy: true,
+    hidePoweredBy: false,
+    noCache,
+    noSniff,
     contentSecurityPolicy: {
       directives: {
         defaultSrc: ["'self'", ...domains],
