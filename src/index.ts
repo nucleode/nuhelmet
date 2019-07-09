@@ -17,6 +17,7 @@ export = fastifyPlugin(function(fastify, opts, next) {
         scriptSrc: ["'self'", ...domains].concat(
           process.env.NODE_ENV === 'development' ? ["'unsafe-eval'", "'unsafe-inline'"] : [],
         ),
+        imgSrc: ["'self' data:", ...domains],
         objectSrc: ["'none'"],
       },
     },
