@@ -4,7 +4,7 @@
   "description": "Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices design for OWASP",
   "main": "./lib",
   "types": "./lib",
-  "author": "Matteo Vivona <matteo@nucleode.com>, Riccado Gulin <riccardo@nucleode.com>",
+  "author": "Matteo Vivona <matteo@nucleode.com>, Riccardo Gulin <riccardo@nucleode.com>",
   "license": "MIT",
   "scripts": {
     "prebuild": "npm run lint && npm run clean-build",
