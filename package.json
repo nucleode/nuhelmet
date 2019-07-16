@@ -1,6 +1,6 @@
 {
   "name": "nuhelmet",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Content Security Policy (CSP) directive for fastify-helmet. Include some security best practices design for OWASP",
   "main": "./lib",
   "types": "./lib",
