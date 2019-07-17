@@ -22,7 +22,7 @@
     "test:reporter": "tap-mocha-reporter xunit < out.tap > junit-testresults.xml"
   },
   "devDependencies": {
-    "@types/node": "^12.6.3",
+    "@types/node": "^12.6.8",
     "chokidar-cli": "~1.2.2",
     "fastify": "^2.6.0",
     "husky": "^3.0.0",
