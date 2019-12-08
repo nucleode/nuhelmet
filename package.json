@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "^12.7.3",
     "chokidar-cli": "~2.0.0",
-    "fastify": "^2.8.0",
+    "fastify": "^2.11.0",
     "husky": "^3.0.2",
     "prettier": "^1.18.2",
     "rimraf": "~3.0.0",
